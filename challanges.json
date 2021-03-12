@@ -1,0 +1,294 @@
+{
+	"info": {
+		"_postman_id": "108f3c3e-bcb1-46af-a833-8ee0771236a4",
+		"name": "challanges",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "add_challange",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {}
+			},
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "email",
+						"value": "m@gmail",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "password",
+						"value": "1",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "user_role",
+						"value": "1",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "branch_id",
+						"value": "1",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "ll",
+							"type": "text"
+						},
+						{
+							"key": "image",
+							"type": "file",
+							"src": "/C:/Users/ezzo_/Downloads/صور الموقع/1.jpg"
+						},
+						{
+							"key": "description",
+							"value": "sdsdsdf",
+							"type": "text"
+						},
+						{
+							"key": "rules",
+							"value": "ssdfsdfsf",
+							"type": "text"
+						},
+						{
+							"key": "reward",
+							"value": "dsfsdfsd",
+							"type": "text"
+						},
+						{
+							"key": "number_of_participants",
+							"value": "10",
+							"type": "text"
+						},
+						{
+							"key": "start_date",
+							"value": "2021-03-11 16:55:00",
+							"type": "text"
+						},
+						{
+							"key": "end_date",
+							"value": "2021-03-11 16:55:01",
+							"type": "text"
+						},
+						{
+							"key": "sponsor_name",
+							"value": "dsfsdfsdf",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/add_challange",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"add_challange"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "upcoming",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/upcoming",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"upcoming"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "feature",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/feature",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"feature"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "completed",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/completed",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"completed"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "show_challange",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/show_challange/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"show_challange",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add_clip",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "title",
+							"value": "title 1",
+							"type": "text"
+						},
+						{
+							"key": "video",
+							"type": "file",
+							"src": "/F:/courses/[FreeCourseSite.com] Udemy - GitHub Ultimate Master Git and GitHub – Beginner to Expert/01 Introduction/003 Using The Command Line-en.srt"
+						},
+						{
+							"key": "user_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "challange_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/add_clip",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"add_clip"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "add_vote",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "value",
+							"value": "5",
+							"type": "text"
+						},
+						{
+							"key": "clip_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/add_vote",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"add_vote"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
